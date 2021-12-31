@@ -21,7 +21,6 @@ void initializeGame(ActiveList* activePlayersList, ActiveArray* activePlayersArr
 	(*(activePlayersArray)) = arr;
 	(*(activePlayersTree)) = tree;
 }
-
 void gameSequence(ActiveList* activePlayersList, ActiveTree* activePlayersTree)
 {
 	WinnersList winners;
@@ -29,7 +28,6 @@ void gameSequence(ActiveList* activePlayersList, ActiveTree* activePlayersTree)
 	printWinnersList(winners);
 	freeWinnersList(&winners);
 }
-
 void freeAll(ActiveList* activePlayersList, ActiveArray* activePlayersArray, ActiveTree* activePlayersTree)
 {
 	free(activePlayersArray->activePlayers);
@@ -49,5 +47,6 @@ void main()
 	
 
 	gameSequence(&activePlayers, &activePlayersTree);
+
 	freeAll(&activePlayers, &activePlayersArr, &activePlayersTree);
 }
