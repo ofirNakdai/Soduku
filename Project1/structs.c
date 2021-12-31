@@ -137,6 +137,7 @@ void freeActiveListRec(ActiveListNode* head)
 }
 
 /*WinnersPlayersList functions*/
+
 WinnersList createEmptyWinnersList()
 {
 	WinnersList newList;
